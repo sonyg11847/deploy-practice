@@ -100,4 +100,5 @@ public class PostsApiControllerTest {
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
     }
 
+    // todo: 삭제 테스트
 }
