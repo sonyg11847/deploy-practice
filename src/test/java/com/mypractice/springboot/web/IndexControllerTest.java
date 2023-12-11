@@ -22,7 +22,7 @@ public class IndexControllerTest {
         String body = this.restTemplate.getForObject("/", String.class);
 
         // then
-        assertThat(body).contains("스프링 부트 웹 서비스 입니다.");
+        assertThat(body).contains("스프링 부트 웹 서비스 ver.2");
     }
 
     //todo: 작성, 수정 화면전이 테스트 추가
