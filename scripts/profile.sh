@@ -23,7 +23,7 @@ function find_idle_profile
 }
 
 # 쉬고 있는 프로필의 포트번호 찾기
-functon find_idle_port
+function find_idle_port
 {
   IDLE_PROFILE=$(find_idle_profile)
 

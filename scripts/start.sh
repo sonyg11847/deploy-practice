@@ -5,10 +5,11 @@ ABSDIR=$(dirname ${ABSPATH})
 source ${ABSDIR}/profile.sh
 
 REPOSITORY=/home/ec2-user/app/step3
+BUILD_JAR=zip/build/libs/*.jar
 PROJECT_NAME=deploy-practice
 
 echo "> Build 파일 복사"
-cp $REPOSITORY/zip/*.jar $REPOSITORY/
+cp $REPOSITORY/$BUILD_JAR $REPOSITORY/
 
 echo "> 새 어플리케이션 배포"
 JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
